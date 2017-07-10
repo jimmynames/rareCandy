@@ -1,0 +1,224 @@
+{
+  "nodes": {
+    "SitePage /dev-404-page/": {
+      "path": "/dev-404-page/",
+      "id": "SitePage /dev-404-page/",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "type": "SitePage",
+        "contentDigest": "f91d29e10ba680b413138cf9ed86e655",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "Plugin component-page-creator": {
+      "resolve": "/Users/names/Documents/web/rareCandy/node_modules/gatsby/dist/internal-plugins/component-page-creator",
+      "name": "component-page-creator",
+      "version": "1.0.0",
+      "pluginOptions": {
+        "plugins": []
+      },
+      "pluginFilepath": "/Users/names/Documents/web/rareCandy/node_modules/gatsby/dist/internal-plugins/component-page-creator",
+      "packageJson": {
+        "name": "component-page-creator",
+        "description": "An internal Gatsby plugin that creates pages from component files in src/pages",
+        "version": "1.0.0",
+        "main": "index.js",
+        "keywords": [
+          "gatsby",
+          "gatsby-plugin"
+        ],
+        "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+        "license": "MIT",
+        "dependencies": [],
+        "devDependencies": [],
+        "peerDependencies": [],
+        "optionalDependecies": [],
+        "bundledDependecies": []
+      },
+      "id": "Plugin component-page-creator",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "contentDigest": "fbe8345f49cbfdab05fe7d010c9529d3",
+        "type": "SitePlugin",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "Plugin internal-data-bridge": {
+      "resolve": "/Users/names/Documents/web/rareCandy/node_modules/gatsby/dist/internal-plugins/internal-data-bridge",
+      "name": "internal-data-bridge",
+      "version": "1.0.0",
+      "pluginOptions": {
+        "plugins": []
+      },
+      "pluginFilepath": "/Users/names/Documents/web/rareCandy/node_modules/gatsby/dist/internal-plugins/internal-data-bridge",
+      "packageJson": {
+        "name": "internal-data-bridge",
+        "description": "An internal Gatsby plugin which creates data nodes from internal data",
+        "version": "1.0.0",
+        "main": "index.js",
+        "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+        "license": "MIT",
+        "dependencies": [],
+        "devDependencies": [],
+        "peerDependencies": [],
+        "optionalDependecies": [],
+        "bundledDependecies": []
+      },
+      "id": "Plugin internal-data-bridge",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "contentDigest": "69118be6a3698943faa6ef0c2f732cce",
+        "type": "SitePlugin",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "Plugin dev-404-page": {
+      "resolve": "/Users/names/Documents/web/rareCandy/node_modules/gatsby/dist/internal-plugins/dev-404-page",
+      "name": "dev-404-page",
+      "version": "1.0.0",
+      "pluginOptions": {
+        "plugins": []
+      },
+      "pluginFilepath": "/Users/names/Documents/web/rareCandy/node_modules/gatsby/dist/internal-plugins/dev-404-page",
+      "packageJson": {
+        "name": "dev-404-page",
+        "description": "Internal plugin to add a 404 page in development with helpful information",
+        "version": "1.0.0",
+        "main": "index.js",
+        "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+        "license": "MIT",
+        "dependencies": [],
+        "devDependencies": [],
+        "peerDependencies": [],
+        "optionalDependecies": [],
+        "bundledDependecies": []
+      },
+      "id": "Plugin dev-404-page",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "contentDigest": "0ccf949122c8428905b4b91e38ba3d30",
+        "type": "SitePlugin",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "Plugin prod-404": {
+      "resolve": "/Users/names/Documents/web/rareCandy/node_modules/gatsby/dist/internal-plugins/prod-404",
+      "name": "prod-404",
+      "version": "1.0.0",
+      "pluginOptions": {
+        "plugins": []
+      },
+      "pluginFilepath": "/Users/names/Documents/web/rareCandy/node_modules/gatsby/dist/internal-plugins/prod-404",
+      "packageJson": {
+        "name": "prod-404",
+        "description": "Internal plugin to detect various flavors of 404 pages and ensure there's a 404.html path created as well to ensure compatability with static hosts",
+        "version": "1.0.0",
+        "main": "index.js",
+        "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+        "license": "MIT",
+        "dependencies": [],
+        "devDependencies": [],
+        "peerDependencies": [],
+        "optionalDependecies": [],
+        "bundledDependecies": []
+      },
+      "id": "Plugin prod-404",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "contentDigest": "110808a90d77c3425a68c76a36bec689",
+        "type": "SitePlugin",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "Plugin query-runner": {
+      "resolve": "/Users/names/Documents/web/rareCandy/node_modules/gatsby/dist/internal-plugins/query-runner",
+      "name": "query-runner",
+      "version": "1.0.0",
+      "pluginOptions": {
+        "plugins": []
+      },
+      "pluginFilepath": "/Users/names/Documents/web/rareCandy/node_modules/gatsby/dist/internal-plugins/query-runner",
+      "packageJson": {
+        "name": "query-runner",
+        "description": "Internal plugin for running queries",
+        "version": "1.0.0",
+        "main": "index.js",
+        "author": "",
+        "license": "MIT",
+        "dependencies": [],
+        "devDependencies": [],
+        "peerDependencies": [],
+        "optionalDependecies": [],
+        "bundledDependecies": []
+      },
+      "id": "Plugin query-runner",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "contentDigest": "94a78c7e92b60ccebd717c6ca953582e",
+        "type": "SitePlugin",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "Plugin default-site-plugin": {
+      "resolve": "/Users/names/Documents/web/rareCandy",
+      "name": "default-site-plugin",
+      "version": "d41d8cd98f00b204e9800998ecf8427e",
+      "pluginOptions": {
+        "plugins": []
+      },
+      "pluginFilepath": "/Users/names/Documents/web/rareCandy",
+      "packageJson": {
+        "name": "rareCandy",
+        "description": "",
+        "version": "1.0.0",
+        "main": "index.js",
+        "author": "",
+        "license": "ISC",
+        "dependencies": [
+          {
+            "name": "gatsby",
+            "version": "^1.0.5"
+          }
+        ],
+        "devDependencies": [],
+        "peerDependencies": [],
+        "optionalDependecies": [],
+        "bundledDependecies": []
+      },
+      "id": "Plugin default-site-plugin",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "contentDigest": "bc1334acb251608e094f4a12ff1375f0",
+        "type": "SitePlugin",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "Site": {
+      "siteMetadata": {},
+      "buildTime": "2017-07-07T23:21:42.544Z",
+      "id": "Site",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "contentDigest": "cceadfa1e9d7d23596a8bedebed7f909",
+        "type": "Site",
+        "owner": "internal-data-bridge"
+      }
+    }
+  },
+  "status": {
+    "plugins": {},
+    "PLUGINS_HASH": "cce877975a8559aa809950522945c1c5"
+  },
+  "pageDataDependencies": {
+    "nodes": {},
+    "connections": {}
+  }
+}
