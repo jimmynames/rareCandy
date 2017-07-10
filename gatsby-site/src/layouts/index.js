@@ -5,7 +5,7 @@ import Helmet from "react-helmet"
 import { rhythm } from "../utils/typography"
 const styled = require('styled-components').default
 
-const Viewport = styled.div`
+const Layout = styled.div`
   display: flex;
   flex-direcrion: row;
   background-color: yellow;
@@ -22,6 +22,7 @@ const PageRender = styled.div`
   height: 100vh;
   background-color: blue;
 `
+
 export default class Template extends React.Component {
   static propTypes = {
     children: PropTypes.func,
@@ -29,7 +30,7 @@ export default class Template extends React.Component {
 
   render() {
     return (
-      <Viewport>
+      <Layout>
         <Helmet
           title="Gatsby Default Starter"
           meta={[
@@ -40,6 +41,7 @@ export default class Template extends React.Component {
         <SectionBackground>
           <div
             style={{
+              background: 'black'
               // margin: `0 auto`,
               // maxWidth: 960,
               // padding: `${rhythm(1)} ${rhythm(3 / 4)}`,
@@ -61,7 +63,7 @@ export default class Template extends React.Component {
         <PageRender className='PageRender'>
           {this.props.children()}
         </PageRender>
-      </Viewport>
+      </Layout>
     )
   }
 }
