@@ -3,7 +3,25 @@ import PropTypes from "prop-types"
 import Link from "gatsby-link"
 import Helmet from "react-helmet"
 import { rhythm } from "../utils/typography"
+const styled = require('styled-components').default
 
+const Viewport = styled.div`
+  display: flex;
+  flex-direcrion: row;
+  background-color: yellow;
+`
+
+const SectionBackground = styled.section`
+  height: 100vh;
+  width: 33.333%;
+  background-color: pink;
+`
+
+const PageRender = styled.div`
+  width: 66.66%;
+  height: 100vh;
+  background-color: blue;
+`
 export default class Template extends React.Component {
   static propTypes = {
     children: PropTypes.func,
@@ -11,7 +29,7 @@ export default class Template extends React.Component {
 
   render() {
     return (
-      <div>
+      <Viewport>
         <Helmet
           title="Gatsby Default Starter"
           meta={[
@@ -19,17 +37,12 @@ export default class Template extends React.Component {
             { name: "keywords", content: "sample, something" },
           ]}
         />
-        <div
-          style={{
-            background: `rebeccapurple`,
-            marginBottom: rhythm(1),
-          }}
-        >
+        <SectionBackground>
           <div
             style={{
-              margin: `0 auto`,
-              maxWidth: 960,
-              padding: `${rhythm(1)} ${rhythm(3 / 4)}`,
+              // margin: `0 auto`,
+              // maxWidth: 960,
+              // padding: `${rhythm(1)} ${rhythm(3 / 4)}`,
             }}
           >
             <h1 style={{ margin: 0 }}>
@@ -44,18 +57,11 @@ export default class Template extends React.Component {
               </Link>
             </h1>
           </div>
-        </div>
-        <div
-          style={{
-            margin: `0 auto`,
-            maxWidth: 960,
-            padding: `${rhythm(1)} ${rhythm(3 / 4)}`,
-            paddingTop: 0,
-          }}
-        >
+        </SectionBackground>
+        <PageRender className='PageRender'>
           {this.props.children()}
-        </div>
-      </div>
+        </PageRender>
+      </Viewport>
     )
   }
 }

@@ -4,7 +4,7 @@ const styled = require('styled-components').default
 import Helmet from "react-helmet"
 
 const Lol = styled.div`
-  background-color: pink;
+  background-color: green;
 `
 
 export default class Index extends React.Component {
