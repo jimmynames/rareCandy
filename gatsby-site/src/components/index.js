@@ -1,9 +1,23 @@
 import React from "react"
 // const styled = require('styled-components').default
-import styled from "styled-components"
+import styled, { injectGlobal, css } from 'styled-components';
 import PropTypes from "prop-types"
 import Helmet from "react-helmet"
 import styleSheet from 'styled-components/lib/models/StyleSheet'
+
+/*
+ * Global Styles
+ */
+injectGlobal`
+  @import url('https://fonts.googleapis.com/css?family=Slabo+27px');
+  body {
+    font-family: 'Slabo 27px', serif;
+  }
+  a {
+    &:hover, &:focus, &:visited {
+    }
+  }
+`;
 
 const artistCard = styled.div`
     border: 2px solid black;
@@ -30,7 +44,7 @@ export default class Artist extends React.Component {
     return (
       <artistCard>
         <cardImg />
-        <cardTitle />
+        <cardTitle>lol</cardTitle>
       </artistCard>
     )
   }

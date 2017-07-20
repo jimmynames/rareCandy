@@ -1,7 +1,7 @@
 import React from "react"
 import Link from "gatsby-link"
 import Helmet from "react-helmet"
-import styled from "styled-components"
+import styled, { injectGlobal, css } from 'styled-components';
 // const styled = require('styled-components').default
 import Artist from "../components/index.js"
 // import styleSheet from 'styled-components/lib/models/StyleSheet';
