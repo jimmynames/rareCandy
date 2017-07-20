@@ -1,19 +1,37 @@
 import React from "react"
-const styled = require('styled-components').default
+// const styled = require('styled-components').default
+import styled from "styled-components"
 import PropTypes from "prop-types"
 import Helmet from "react-helmet"
+import styleSheet from 'styled-components/lib/models/StyleSheet'
 
-const notlol = styled.div`
-    background-color: purple;
-    height: 666px;
-    width: 100%;
-    border: 2px solid white;
+const artistCard = styled.div`
+    border: 2px solid black;
+    width: 33.33%;
+    height: 75%;
+    background: lightblue;
 `
 
-export default class Loll extends React.Component {
+const cardImg = styled.img`
+    height: 75%;
+    width: 100%;
+    object-fit: contain;
+`
+
+const cardTitle = styled.h5`
+    color: black;
+    font-weight: 600;
+    text-align: left;
+    width: 100%;
+`
+
+export default class Artist extends React.Component {
   render() {
     return (
-      <notlol style={{background: 'blue'}}><h1>hhh</h1></notlol>
+      <artistCard>
+        <cardImg />
+        <cardTitle />
+      </artistCard>
     )
   }
 }

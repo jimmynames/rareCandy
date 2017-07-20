@@ -275,7 +275,8 @@ var queue = {
 
       var pageResources = {
         component: syncRequires.components[page.componentChunkName],
-        json: syncRequires.json[page.jsonName]
+        json: syncRequires.json[page.jsonName],
+        page: page
       };
       cb(pageResources);
       return pageResources;
@@ -313,8 +314,8 @@ var queue = {
       // we move on.
       var done = function done() {
         if (component && json) {
-          pathScriptsCache[path] = { component: component, json: json };
-          var _pageResources = { component: component, json: json };
+          pathScriptsCache[path] = { component: component, json: json, page: _page };
+          var _pageResources = { component: component, json: json, page: _page };
           cb(_pageResources);
           _emitter2.default.emit("onPostLoadPageResources", {
             page: _page,

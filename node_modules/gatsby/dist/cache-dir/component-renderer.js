@@ -99,16 +99,19 @@ var ComponentRenderer = function (_React$Component) {
         }
       });
     }
-
-    // Check if the component or json have changed
-
   }, {
     key: "shouldComponentUpdate",
     value: function shouldComponentUpdate(nextProps, nextState) {
+      // Check if the component or json have changed.
       if (this.state.pageResources.component !== nextState.pageResources.component) {
         return true;
       }
       if (this.state.pageResources.json !== nextState.pageResources.json) {
+        return true;
+      }
+      // Check if location has changed on a page using internal routing
+      // via matchPath configuration.
+      if (this.state.location.key !== nextState.location.key && nextState.pageResources.page && nextState.pageResources.page.matchPath) {
         return true;
       }
       return false;
@@ -117,7 +120,9 @@ var ComponentRenderer = function (_React$Component) {
     key: "render",
     value: function render() {
       if (this.state.pageResources) {
-        return (0, _react.createElement)(this.state.pageResources.component, (0, _extends3.default)({}, this.props, this.state.pageResources.json));
+        return (0, _react.createElement)(this.state.pageResources.component, (0, _extends3.default)({
+          key: this.props.location.pathname
+        }, this.props, this.state.pageResources.json));
       } else {
         return null;
       }

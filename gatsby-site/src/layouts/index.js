@@ -8,17 +8,17 @@ const styled = require('styled-components').default
 const Layout = styled.div`
   display: flex;
   flex-direcrion: row;
-  background-color: yellow;
+  background-color: lightpink;
 `
 
 const SectionBackground = styled.section`
   height: 100vh;
   width: 33.333%;
-  background-color: pink;
+  background-color: lightpink;
 `
 
 const PageRender = styled.div`
-  width: 66.66%;
+  width: 75%;
   height: 100vh;
   background-color: blue;
 `
@@ -32,30 +32,17 @@ export default class Template extends React.Component {
     return (
       <Layout>
         <Helmet
-          title="Gatsby Default Starter"
+          title="Rare Candy"
           meta={[
-            { name: "description", content: "Sample" },
-            { name: "keywords", content: "sample, something" },
+            { name: "description", content: "Rare Candy Records" },
+            { name: "keywords", content: "rare candy, rare, candy, rare candy records" },
           ]}
         />
-        <SectionBackground>
-          <div
-            style={{
-              background: 'black'
-              // margin: `0 auto`,
-              // maxWidth: 960,
-              // padding: `${rhythm(1)} ${rhythm(3 / 4)}`,
-            }}
-          >
-            <h1 style={{ margin: 0 }}>
-              <Link
-                to="/"
-                style={{
-                  color: "white",
-                  textDecoration: "none",
-                }}
-              >
-                Gatsby
+        <SectionBackground className="SectionBackground">
+          <div>
+            <h1>
+              <Link to="/" >
+                CONTENT
               </Link>
             </h1>
           </div>
