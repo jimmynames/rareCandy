@@ -3,12 +3,17 @@ import PropTypes from "prop-types"
 import Link from "gatsby-link"
 import Helmet from "react-helmet"
 import { rhythm } from "../utils/typography"
-import styled, { injectGlobal } from 'styled-components';
+import styled from 'styled-components';
 
 const Layout = styled.div`
   display: flex;
   flex-direcrion: row;
   background-color: lightpink;
+  font-size: 10px !important;
+`
+const Wrap = styled.div`
+	max-width: 1200px;
+  margin: 0 auto;
 `
 
 const Logo = styled.img`
@@ -27,7 +32,20 @@ const NavMenu = styled.ul`
 `
 
 const NavItem = styled.li`
-  font-size: 1.6rem;
+  font-size: 1.6em;
+  list-style-type: none;
+  text-decoration: none;
+  color: black;
+  a {
+    text-decoration: none;
+    color: black;
+  }
+  &:hover,
+  &:visited,
+  &:focus {
+    text-decoration: none;
+    color: black;
+  }
 `
 
 const PageRender = styled.div`
@@ -43,7 +61,9 @@ export default class Template extends React.Component {
 
   render() {
     return (
-      <Layout>
+      <Wrap>
+        <Layout>
+
         <Helmet
           title="Rare Candy"
           meta={[
@@ -53,7 +73,9 @@ export default class Template extends React.Component {
         />
 
         <Container className="LayoutContainer">
+
           <Logo />
+
           <NavMenu>
             <NavItem><Link to="/about/" >About</Link></NavItem>
             <NavItem><Link to="/artists/" >Artists</Link></NavItem>
@@ -66,7 +88,9 @@ export default class Template extends React.Component {
         <PageRender className='PageRender'>
           {this.props.children()}
         </PageRender>
+
       </Layout>
+    </Wrap>
     )
   }
 }

@@ -8,9 +8,9 @@ import styled, { injectGlobal } from 'styled-components';
  */
 injectGlobal`
   @import url('https://fonts.googleapis.com/css?family=Slabo+27px');
-  body, html, * {
-    font-family: 'Slabo', serif;
-    font-size: 10px !important;
+  body, html {
+    font-family: 'Slabo 27px', serif;
+    font-size: 11px !important;
   }
   a {
     &:hover, &:focus, &:visited {
