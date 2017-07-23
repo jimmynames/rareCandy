@@ -1,13 +1,19 @@
 {
   "nodes": {
     "SitePage /dev-404-page/": {
+      "component": "/Users/names/Documents/web/rareCandy/.cache/dev-404-page.js",
       "path": "/dev-404-page/",
+      "componentChunkName": "page-component---cache-dev-404-page-js",
+      "jsonName": "dev-404-page.json",
+      "internalComponentName": "ComponentDev404Page",
+      "context": {},
+      "pluginCreator___NODE": "Plugin dev-404-page",
       "id": "SitePage /dev-404-page/",
       "parent": "SOURCE",
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "f91d29e10ba680b413138cf9ed86e655",
+        "contentDigest": "6ad64db6b363d20fe47c845963be2f3f",
         "owner": "internal-data-bridge"
       }
     },
@@ -183,7 +189,15 @@
         "dependencies": [
           {
             "name": "gatsby",
-            "version": "^1.0.5"
+            "version": "^1.3.2"
+          },
+          {
+            "name": "gatsby-link",
+            "version": "^1.3.2"
+          },
+          {
+            "name": "gatsby-plugin-styled-components",
+            "version": "^1.0.1"
           }
         ],
         "devDependencies": [],
@@ -202,12 +216,15 @@
     },
     "Site": {
       "siteMetadata": {},
-      "buildTime": "2017-07-07T23:21:42.544Z",
+      "port": "8000",
+      "host": "localhost",
+      "pathPrefix": "",
+      "buildTime": "2017-07-23T17:52:29.692Z",
       "id": "Site",
       "parent": "SOURCE",
       "children": [],
       "internal": {
-        "contentDigest": "cceadfa1e9d7d23596a8bedebed7f909",
+        "contentDigest": "d1383abbc71dd5ff97a1e823f47acb5c",
         "type": "Site",
         "owner": "internal-data-bridge"
       }
@@ -215,7 +232,7 @@
   },
   "status": {
     "plugins": {},
-    "PLUGINS_HASH": "cce877975a8559aa809950522945c1c5"
+    "PLUGINS_HASH": "82d150fbc986a100e77181707d3fc6ce"
   },
   "pageDataDependencies": {
     "nodes": {},

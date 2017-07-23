@@ -15,11 +15,7 @@ const Page = styled.div`
 export default class Index extends React.Component {
   render() {
     return (
-      <Page>
-        <Artist />
-        <Artist />
-        <Artist />
-      </Page>
+      <Page />
     )
   }
 }

@@ -14,6 +14,10 @@ var _reactDom2 = _interopRequireDefault(_reactDom);
 
 var _reactHotLoader = require("react-hot-loader");
 
+var _socketIo = require("./socketIo");
+
+var _socketIo2 = _interopRequireDefault(_socketIo);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var apiRunner = require("./api-runner-browser");
@@ -23,6 +27,9 @@ window.___emitter = require("./emitter"
 // Let the site/plugins run code very early.
 );apiRunner("onClientEntry"
 
+// Hook up the client to socket.io on server
+);(0, _socketIo2.default
+
 /**
  * Service Workers are persistent by nature. They stick around,
  * serving a cached version of the site if they aren't removed.
@@ -31,7 +38,7 @@ window.___emitter = require("./emitter"
  *
  * Let's unregister the service workers in development, and tidy up a few errors.
  */
-);if ("serviceWorker" in navigator) {
+)();if ("serviceWorker" in navigator) {
   navigator.serviceWorker.getRegistrations().then(function (registrations) {
     var _iteratorNormalCompletion = true;
     var _didIteratorError = false;

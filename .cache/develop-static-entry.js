@@ -64,7 +64,7 @@ module.exports = function (locals, callback) {
 
   var htmlElement = _react2.default.createElement(HTML, (0, _extends3.default)({}, bodyProps, {
     body: "",
-    headComponents: headComponents,
+    headComponents: headComponents.concat([_react2.default.createElement("script", { key: "io", src: "/socket.io/socket.io.js" })]),
     preBodyComponents: preBodyComponents,
     postBodyComponents: postBodyComponents.concat([_react2.default.createElement("script", { key: "commons", src: "/commons.js" })])
   }));
