@@ -5,6 +5,12 @@ import Helmet from "react-helmet"
 import { rhythm } from "../utils/typography"
 import styled from 'styled-components';
 
+const Background = styled.div`
+  background: pink;
+  height: 100%;
+  width: 100%;
+`
+
 const Layout = styled.div`
   display: flex;
   flex-direcrion: row;
@@ -23,7 +29,7 @@ const Logo = styled.img`
 
 const Container = styled.section`
   height: 100vh;
-  width: 33.333%;
+  width: 20%;
   background-color: lightpink;
 `
 
@@ -49,7 +55,7 @@ const NavItem = styled.li`
 `
 
 const PageRender = styled.div`
-  width: 75%;
+  width: 80%;
   height: 100vh;
   background-color: blue;
 `
@@ -61,8 +67,9 @@ export default class Template extends React.Component {
 
   render() {
     return (
+      <Background>
       <Wrap>
-        <Layout>
+        <Layout className="Layout Nav">
 
         <Helmet
           title="Rare Candy"
@@ -76,7 +83,7 @@ export default class Template extends React.Component {
 
           <Logo />
 
-          <NavMenu>
+          <NavMenu className="Nav Menu">
             <NavItem><Link to="/about/" >About</Link></NavItem>
             <NavItem><Link to="/artists/" >Artists</Link></NavItem>
             <NavItem><Link to="/studio/" >Studio</Link></NavItem>
@@ -85,12 +92,13 @@ export default class Template extends React.Component {
           </NavMenu>
         </Container>
 
-        <PageRender className='PageRender'>
+        <PageRender className='Page Render'>
           {this.props.children()}
         </PageRender>
 
       </Layout>
     </Wrap>
+    </Background>
     )
   }
 }
