@@ -1,6 +1,6 @@
 import React from "react"
 import Link from "gatsby-link"
-const styled = require('styled-components').default
+import styled from 'styled-components'
 import Helmet from "react-helmet"
 
 const Lol = styled.div`

@@ -3,7 +3,7 @@ import PropTypes from "prop-types"
 import Link from "gatsby-link"
 import Helmet from "react-helmet"
 import { rhythm } from "../utils/typography"
-const styled = require('styled-components').default
+import styled, { injectGlobal } from 'styled-components';
 
 const Layout = styled.div`
   display: flex;
@@ -11,10 +11,23 @@ const Layout = styled.div`
   background-color: lightpink;
 `
 
-const SectionBackground = styled.section`
+const Logo = styled.img`
+  width: 100%;
+  margin-bottom: 1.5rem;
+`
+
+const Container = styled.section`
   height: 100vh;
   width: 33.333%;
   background-color: lightpink;
+`
+
+const NavMenu = styled.ul`
+  text-decoration: none;
+`
+
+const NavItem = styled.li`
+  font-size: 1.6rem;
 `
 
 const PageRender = styled.div`
@@ -38,15 +51,18 @@ export default class Template extends React.Component {
             { name: "keywords", content: "rare candy, rare, candy, rare candy records" },
           ]}
         />
-        <SectionBackground className="SectionBackground">
-          <div>
-            <h1>
-              <Link to="/" >
-                CONTENT
-              </Link>
-            </h1>
-          </div>
-        </SectionBackground>
+
+        <Container className="LayoutContainer">
+          <Logo />
+          <NavMenu>
+            <NavItem><Link to="/about/" >About</Link></NavItem>
+            <NavItem><Link to="/artists/" >Artists</Link></NavItem>
+            <NavItem><Link to="/studio/" >Studio</Link></NavItem>
+            <NavItem><Link to="/events/" >Events</Link></NavItem>
+            <NavItem><Link to="/contact/" >Contact</Link></NavItem>
+          </NavMenu>
+        </Container>
+
         <PageRender className='PageRender'>
           {this.props.children()}
         </PageRender>
