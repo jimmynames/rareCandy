@@ -3,10 +3,11 @@ import PropTypes from "prop-types"
 import Link from "gatsby-link"
 import Helmet from "react-helmet"
 import { rhythm } from "../utils/typography"
-import styled from 'styled-components';
+import styled, { injectGlobal, css } from 'styled-components';
+require('normalize-css');
 
 const Background = styled.div`
-  background: pink;
+  background: black;
   height: 100%;
   width: 100%;
 `
@@ -14,8 +15,8 @@ const Background = styled.div`
 const Layout = styled.div`
   display: flex;
   flex-direcrion: row;
-  background-color: lightpink;
-  font-size: 10px !important;
+  background-color: black;
+  font-size: 12px !important;
 `
 const Wrap = styled.div`
 	max-width: 1200px;
@@ -30,7 +31,7 @@ const Logo = styled.img`
 const Container = styled.section`
   height: 100vh;
   width: 20%;
-  background-color: lightpink;
+  background-color: black;
 `
 
 const NavMenu = styled.ul`
@@ -41,23 +42,23 @@ const NavItem = styled.li`
   font-size: 1.6em;
   list-style-type: none;
   text-decoration: none;
-  color: black;
+  color: white;
   a {
     text-decoration: none;
-    color: black;
+    color: white;
   }
   &:hover,
   &:visited,
   &:focus {
     text-decoration: none;
-    color: black;
+    color: white;
   }
 `
 
 const PageRender = styled.div`
   width: 80%;
   height: 100vh;
-  background-color: blue;
+  background-color: black;
 `
 
 export default class Template extends React.Component {
@@ -72,10 +73,10 @@ export default class Template extends React.Component {
         <Layout className="Layout Nav">
 
         <Helmet
-          title="Rare Candy"
+          title="jimmyNames"
           meta={[
-            { name: "description", content: "Rare Candy Records" },
-            { name: "keywords", content: "rare candy, rare, candy, rare candy records" },
+            { name: "description", content: "Jimmy Names" },
+            { name: "keywords", content: "jimmy names, jimmyNames" },
           ]}
         />
 
@@ -84,11 +85,9 @@ export default class Template extends React.Component {
           <Logo />
 
           <NavMenu className="Nav Menu">
-            <NavItem><Link to="/about/" >About</Link></NavItem>
-            <NavItem><Link to="/artists/" >Artists</Link></NavItem>
-            <NavItem><Link to="/studio/" >Studio</Link></NavItem>
-            <NavItem><Link to="/events/" >Events</Link></NavItem>
-            <NavItem><Link to="/contact/" >Contact</Link></NavItem>
+            <NavItem><Link to="/about/">About</Link></NavItem>
+            <NavItem><Link to="/artists/">Work</Link></NavItem>
+            <NavItem><Link to="/contact/">Contact</Link></NavItem>
           </NavMenu>
         </Container>
 
