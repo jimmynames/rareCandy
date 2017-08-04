@@ -42,6 +42,7 @@ const NavMenu = styled.ul`
 
 const NavItem = styled.li`
   font-size: 1.6em;
+  color: white;
   padding: 0.666em;
   font-family: '-apple-system', Helvetica;
   list-style-type: none;
@@ -166,11 +167,12 @@ export default class Template extends React.Component {
 
         <Container className="LayoutContainer">
 
-          <Logo src={logo} />
+          <Link to="/"><Logo src={logo} /></Link>
 
           <NavMenu className="Nav Menu">
-            <NavItem><Link to="/about/">About</Link></NavItem>
+            <NavItem><Link to="/about/">About.i</Link></NavItem>
             <NavItem><Link to="/contact/">Me.png</Link></NavItem>
+            <NavItem>Cv.pdf<a href='' download /></NavItem>
           </NavMenu>
         </Container>
 
