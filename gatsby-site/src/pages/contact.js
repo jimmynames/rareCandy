@@ -32,9 +32,9 @@ const ContactLi = styled.li`
   }
   &:hover {
     background: blue;
+    transition: background 1.4666s ease;
     a {
       color: black;
-      transition: color 0.1666s ease;
     }
   }
 `
