@@ -64,10 +64,14 @@ const NavItem = styled.li`
   content: "";
   position: absolute;
   width: 100%;
-  height: 2px;
+  height: 5px;
   bottom: 0;
   left: 0;
-  background-color: coral;
+  background: linear-gradient(-45deg, coral, blue, purple, orange);
+	background-size: 400% 400%;
+	-webkit-animation: Gradient 15s ease infinite;
+	-moz-animation: Gradient 15s ease infinite;
+	animation: Gradient 15s ease infinite;
   visibility: hidden;
   -webkit-transform: scaleX(0);
   transform: scaleX(0);
@@ -97,6 +101,42 @@ const NavItem = styled.li`
     }
   }
   &:hover
+
+  @-webkit-keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+@-moz-keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+@keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
 `
 
 const PageRender = styled.div`
