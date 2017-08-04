@@ -6,15 +6,16 @@ import styled, { injectGlobal, css } from 'styled-components';
 // import typography from "./utils/typography"
 
 const HTML = styled.html`
-  background: pink;
+  background: black;
+  font-family: '-apple-system';
 `
 
 const Body = styled.body`
-  background-color: lightpink;
+  background: black;
 `
 
 const App = styled.div`
-  background-color: lightpink;
+  background: black;
 `
 
 const BUILD_TIME = new Date().getTime()

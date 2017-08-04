@@ -6,7 +6,7 @@ import styled from 'styled-components';
 const Page = styled.div`
   width: 100%;
   height: 100%;
-  background-color: lightyellow;
+  padding: 5px;
 `
 
 const ArtistDeck = styled.div`
