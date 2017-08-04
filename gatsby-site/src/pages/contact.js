@@ -31,9 +31,10 @@ const ContactLi = styled.li`
     color: white;
   }
   &:hover {
-    background: white;
+    background: blue;
     a {
-      color: blue;
+      color: black;
+      transition: color 0.1666s ease;
     }
   }
 `
