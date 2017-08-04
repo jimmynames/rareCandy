@@ -3,6 +3,12 @@ import Link from "gatsby-link"
 import styled from 'styled-components'
 import Helmet from "react-helmet"
 
+const Page = styled.div`
+  width: 100%;
+  height: 100%;
+  padding: 5px;
+`
+
 const AboutContainer = styled.div`
   color: white;
 `
@@ -10,6 +16,7 @@ const AboutContainer = styled.div`
 export default class Index extends React.Component {
   render() {
     return (
+      <Page>
       <AboutContainer>
       <h1>My names James but most people call me Jimmy</h1>
       <h2>I live on the internet under the alias of jimmyNames</h2>
@@ -18,6 +25,7 @@ export default class Index extends React.Component {
       <h5>I also dig <a href="https://soundcloud.com/somepeoplecallmejames">music</a>, anime, art.. blah milenial blah stuff, plants, candles</h5>
       <h6>I work at <a href="https://ruin.studio">ruin.studio</a></h6>
       </AboutContainer>
+      </Page>
     )
   }
 }

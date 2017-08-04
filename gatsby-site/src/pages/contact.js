@@ -23,12 +23,18 @@ const ContactUl = styled.ul`
 `
 
 const ContactLi = styled.li`
-  padding: 0.75rem 0;
+  padding: 0.75rem;
   text-decoration: none;
   margin: 0;
   a {
     text-decoration: none;
     color: white;
+  }
+  &:hover {
+    background: white;
+    a {
+      color: blue;
+    }
   }
 `
 

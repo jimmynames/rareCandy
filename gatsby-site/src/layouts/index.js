@@ -4,7 +4,7 @@ import Link from "gatsby-link"
 import Helmet from "react-helmet"
 import { rhythm } from "../utils/typography"
 import styled, { injectGlobal, css } from 'styled-components';
-require('normalize-css');
+import logo from './jn.gif'
 
 const Background = styled.div`
   background: black;
@@ -82,7 +82,7 @@ export default class Template extends React.Component {
 
         <Container className="LayoutContainer">
 
-          <Logo />
+          <Logo src={logo} />
 
           <NavMenu className="Nav Menu">
             <NavItem><Link to="/about/">About</Link></NavItem>
