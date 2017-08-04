@@ -2,6 +2,9 @@ import React from "react"
 import Link from "gatsby-link"
 import Helmet from "react-helmet"
 import styled, { injectGlobal, css } from 'styled-components';
+import me from './me.png'
+import plant from './plantlife.png'
+import fish from './fish.png'
 
 const Page = styled.div`
   width: 100%;
@@ -35,6 +38,7 @@ const ContactLi = styled.li`
   }
   &:hover {
     background: blue;
+    background: ${props => props.gallery ? 'black' : null };
     transition: background 1.4666s ease;
     a {
       color: black;
@@ -42,7 +46,24 @@ const ContactLi = styled.li`
   }
 `
 
+const Gallery = styled.div`
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  overflow-x: scroll;
+`
 
+const Window = styled.img`
+  height: 50%;
+  width: 50%;
+  object-fit: contain;
+  opacity: 0;
+  &:hover {
+    opacity: 1;
+    transition: opacity 1.666s ease;
+  }
+`
 
 export default class Index extends React.Component {
   render() {
@@ -58,6 +79,14 @@ export default class Index extends React.Component {
                <ContactLi><a href="http://teamtreehouse.com/names" target="_blank"><h1>TreeHouse - /names</h1></a></ContactLi>
                <ContactLi><a href="https://www.codecademy.com/jimmynames" target="_blank"><h1>Codecademy - /jimmynames</h1></a></ContactLi>
                <ContactLi><a href="https://www.freecodecamp.org/jimmynames" target="_blank"><h1>freeCodeCamp - /jimmynames</h1></a></ContactLi>
+               <ContactLi gallery>
+                 <Gallery>
+                   <Window src={me} />
+                   <Window src={plant} />
+                    <Window src={fish} />
+                 </Gallery>
+               </ContactLi>
+
            </ContactUl>
         </ContactContainer>
       </Page>

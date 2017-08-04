@@ -25,7 +25,8 @@ const Wrap = styled.div`
 
 const Logo = styled.img`
   width: 100%;
-  margin-bottom: 1.5rem;
+  padding-top: 1.25rem;
+  margin: 0;
 `
 
 const Container = styled.section`

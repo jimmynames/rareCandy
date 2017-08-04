@@ -7,7 +7,6 @@ import styled, { injectGlobal, css } from 'styled-components';
 
 const HTML = styled.html`
   background: black;
-  overflow-y:scroll;
 `
 
 const Body = styled.body`
