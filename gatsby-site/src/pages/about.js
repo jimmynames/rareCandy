@@ -15,21 +15,9 @@ const AboutContainer = styled.div`
   padding: 0.75rem;
 `
 
-const Cube = styled.div`
-  height: 33.33vh;
-  width: 33.33%;
-  border: 2px dotted white;
-  overflow: scroll;
-  ul {
-    li {
-      font-size: 1.8rem;
-    }
-  }
-`
-
-const RuinLogo = styled.img`
-  height: 30px;
+const H3 = styled.h3`
   margin: 0;
+  margin-right: ${props => props.about ? '0.3em' : null };
 `
 
 const VerticalCenterAlign = styled.div`
@@ -47,61 +35,112 @@ const VerticalCenterAlign = styled.div`
   }
 `
 
-const H3 = styled.h3`
+const RuinLogo = styled.img`
+  height: 30px;
   margin: 0;
-  margin-right: ${props => props.about ? '0.3em' : null };
+`
+
+const CubeContainer = styled.div`
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  h4 {
+    margin: 0;
+  }
+`
+
+const Cube = styled.div`
+  height: 5vh;
+  width: 33.33%;
+  margin-left: 1rem;
+  border: 2px dotted white;
+  overflow: scroll;
+  &:hover {
+    background: white;
+    ul {
+      color: black;
+      transition: color 0.3s ease;
+    }
+  }
+`
+
+const CubeList = styled.ul`
+  font-family: '-apple-system';
+  margin: 0;
+  list-style-type: none;
+  padding: 0.3rem;
+  li {
+    a {
+      font-size: 1.8em;
+      line-height: 0px;
+    }
+  }
+`
+const CubeListItem = styled.li`
+  font-size: 1.8em;
+  line-height: 0px;
+  padding: 0.3em 0;
+  overflow: visible;
+  width: 33vw;
+  a {
+    font-size: 1.8em;
+    line-height: 0px;
+  }
 `
 
 export default class Index extends React.Component {
   render() {
     return (
       <Page>
-      <AboutContainer>
-      <h1>My names James but most people call me Jimmy</h1>
-      <h2>I live on the internet under the alias of 👔<i>Jimmy✨Names</i>👽</h2>
-      <VerticalCenterAlign about><H3 about>I'm a Front-end Web Developer and I work at </H3><a href="https://ruin.studio"><RuinLogo src={logo}/>Studio</a></VerticalCenterAlign>
-      <h4>I love scss🤙🏻, react⚛️ & good coffee💯☕️</h4>
-      <Cube>
-        <ul>
-          <li>I also dig </li>
-          <li><a href="https://soundcloud.com/somepeoplecallmejames">music</a></li>
-          <li>anime</li>
-          <li>art..</li>
-          <li>blah millennial blah stuff</li>
-          <li>plants</li>
-          <li>sunsets</li>
-          <li>stories</li>
-          <li>emoji use</li>
-          <li>candles</li>
-          <li>fashion</li>
-          <li>writing</li>
-          <li>memes</li>
-          <li>swimming</li>
-          <li>literature</li>
-          <li>tinder lol</li>
-          <li>sesh</li>
-          <li>culture</li>
-          <li>wine</li>
-          <li>graffiti</li>
-          <li>things</li>
-          <li>learning</li>
-          <li>irony</li>
-          <li>good design</li>
-          <li>weed i guess</li>
-          <li>good people</li>
-          <li>eating out</li>
-          <li>exposed brick, plaster..</li>
-          <li>making jokes</li>
-          <li>work weirdly</li>
-          <li>chilling</li>
-          <li>pale ales</li>
-          <li>dancing</li>
-          <li>nature</li>
-          <li>code duh</li>
-          <li>aspirational dreams of becoming a 🦄</li>
-        </ul>
-      </Cube>
-      </AboutContainer>
+        <AboutContainer>
+          <h1>My names James but most people call me Jimmy</h1>
+          <h2>I live on the internet under the alias of 👔<i>Jimmy✨Names</i>👽</h2>
+          <VerticalCenterAlign about><H3 about>I'm a Front-end Web Developer and I work at </H3><a href="https://ruin.studio"><RuinLogo src={logo}/>Studio</a></VerticalCenterAlign>
+          <h4>I love scss🤙🏻, react⚛️ & good coffee💯☕️</h4>
+          <CubeContainer>
+            <h4>I also dig</h4>
+            <Cube>
+              <CubeList>
+                <CubeListItem>music</CubeListItem>
+                <CubeListItem>anime</CubeListItem>
+                <CubeListItem>art..</CubeListItem>
+                <CubeListItem>blah millennial blah stuff</CubeListItem>
+                <CubeListItem>plants</CubeListItem>
+                <CubeListItem>sunsets</CubeListItem>
+                <CubeListItem>stories</CubeListItem>
+                <CubeListItem>emoji use</CubeListItem>
+                <CubeListItem>candles</CubeListItem>
+                <CubeListItem>fashion</CubeListItem>
+                <CubeListItem>writing</CubeListItem>
+                <CubeListItem>memes</CubeListItem>
+                <CubeListItem>swimming</CubeListItem>
+                <CubeListItem>literature</CubeListItem>
+                <CubeListItem>tinder lol</CubeListItem>
+                <CubeListItem>sesh</CubeListItem>
+                <CubeListItem>culture</CubeListItem>
+                <CubeListItem>wine</CubeListItem>
+                <CubeListItem>graffiti</CubeListItem>
+                <CubeListItem>things</CubeListItem>
+                <CubeListItem>learning</CubeListItem>
+                <CubeListItem>irony</CubeListItem>
+                <CubeListItem>good design</CubeListItem>
+                <CubeListItem>weed i guess</CubeListItem>
+                <CubeListItem>good people</CubeListItem>
+                <CubeListItem>eating out</CubeListItem>
+                <CubeListItem>exposed brick, plaster..</CubeListItem>
+                <CubeListItem>making jokes</CubeListItem>
+                <CubeListItem>work weirdly</CubeListItem>
+                <CubeListItem>chilling</CubeListItem>
+                <CubeListItem>pale ales</CubeListItem>
+                <CubeListItem>dancing</CubeListItem>
+                <CubeListItem>nature</CubeListItem>
+                <CubeListItem>code duh</CubeListItem>
+                <CubeListItem>aspirational dreams of becoming a 🦄</CubeListItem>
+              </CubeList>
+            </Cube>
+          </CubeContainer>
+        </AboutContainer>
       </Page>
     )
   }
