@@ -19,6 +19,11 @@ const Cube = styled.div`
   width: 33.33%;
   border: 2px solid white;
   overflow: scroll;
+  ul {
+    li {
+      font-size: 1.8rem;
+    }
+  }
 `
 
 const RuinLogo = styled.img`
@@ -53,6 +58,21 @@ export default class Index extends React.Component {
       <h4>I love scss, react & good coffee</h4>
       <Cube>
         <ul>
+          <li>I also dig </li>
+          <li><a href="https://soundcloud.com/somepeoplecallmejames">music</a></li>
+          <li>, anime</li>
+          <li>, art..</li>
+          <li> blah milenial blah stuff</li>
+          <li>, plants,</li>
+          <li>candles</li>
+
+          <li>I also dig </li>
+          <li><a href="https://soundcloud.com/somepeoplecallmejames">music</a></li>
+          <li>, anime</li>
+          <li>, art..</li>
+          <li> blah milenial blah stuff</li>
+          <li>, plants,</li>
+          <li>candles</li>
           <li>I also dig </li>
           <li><a href="https://soundcloud.com/somepeoplecallmejames">music</a></li>
           <li>, anime</li>
