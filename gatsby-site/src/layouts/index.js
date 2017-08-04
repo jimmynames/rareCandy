@@ -36,13 +36,25 @@ const Container = styled.section`
 
 const NavMenu = styled.ul`
   text-decoration: none;
+  margin: 0;
 `
 
 const NavItem = styled.li`
   font-size: 1.6em;
+  padding: 0.666em;
+  font-family: Helvetica;
   list-style-type: none;
   text-decoration: none;
-  color: white;
+  text-align: left;
+  margin: 1.5em 0;
+  background-image: linear-gradient(to right,
+                                      #CCFF33,
+                                      #CCFF33 50%,
+                                      transparent 50%,
+                                      transparent);
+    background-position: 100% 0;
+    background-size: 200% 100%;
+    transition: all .2s ease-in;
   a {
     text-decoration: none;
     color: white;
@@ -51,7 +63,23 @@ const NavItem = styled.li`
   &:visited,
   &:focus {
     text-decoration: none;
-    color: white;
+  }
+  &:hover {
+   padding-left: 1em;
+   color: #006600;
+   border-bottom: 3px #006600 dotted;
+   border-right: 3px #006600 dotted;
+   background-position: 0 0;
+    a {
+      color: black;
+    }
+   &:before {
+     content: '';
+     height: 30px;
+     width: 30px;
+     background: black;
+     border-radius: 100%;
+   }
   }
 `
 
@@ -86,8 +114,7 @@ export default class Template extends React.Component {
 
           <NavMenu className="Nav Menu">
             <NavItem><Link to="/about/">About</Link></NavItem>
-            <NavItem><Link to="/artists/">Work</Link></NavItem>
-            <NavItem><Link to="/contact/">Contact</Link></NavItem>
+            <NavItem><Link to="/contact/">Me.png</Link></NavItem>
           </NavMenu>
         </Container>
 
