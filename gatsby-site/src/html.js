@@ -7,6 +7,7 @@ import styled, { injectGlobal, css } from 'styled-components';
 
 const HTML = styled.html`
   background: black;
+  font-family: '-apple-system';
 `
 
 const Body = styled.body`

@@ -12,6 +12,7 @@ const Page = styled.div`
 
 const AboutContainer = styled.div`
   color: white;
+  padding: 0.75rem;
 `
 
 const Cube = styled.div`
@@ -39,6 +40,10 @@ const VerticalCenterAlign = styled.div`
   padding-bottom: ${props => props.about ? '1.45rem' : null };
   a {
     display: flex;
+    color: white;
+    text-decoration: none;
+    font-size: 1.38316rem;
+    font-family: '-apple-system';
   }
 `
 
@@ -53,8 +58,8 @@ export default class Index extends React.Component {
       <Page>
       <AboutContainer>
       <h1>My names James but most people call me Jimmy</h1>
-      <h2>I live on the internet under the alias of jimmyNames</h2>
-      <VerticalCenterAlign about><H3 about>I'm a Front-end Web Developer and I work at </H3><a href="https://ruin.studio"><RuinLogo src={logo}/></a></VerticalCenterAlign>
+      <h2>I live on the internet under the alias of 👔<i>Jimmy✨Names</i>👽</h2>
+      <VerticalCenterAlign about><H3 about>I'm a Front-end Web Developer and I work at </H3><a href="https://ruin.studio"><RuinLogo src={logo}/>Studio</a></VerticalCenterAlign>
       <h4>I love scss, react & good coffee</h4>
       <Cube>
         <ul>

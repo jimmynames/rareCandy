@@ -43,7 +43,7 @@ const NavMenu = styled.ul`
 const NavItem = styled.li`
   font-size: 1.6em;
   padding: 0.666em;
-  font-family: Helvetica;
+  font-family: '-apple-system', Helvetica;
   list-style-type: none;
   text-decoration: none;
   text-align: left;
@@ -60,6 +60,21 @@ const NavItem = styled.li`
     text-decoration: none;
     color: white;
   }
+  &:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: coral;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
   &:hover,
   &:visited,
   &:focus {
@@ -68,20 +83,20 @@ const NavItem = styled.li`
   &:hover {
    padding-left: 1em;
    color: #006600;
-   border-bottom: 3px #006600 dotted;
-   border-right: 3px #006600 dotted;
+   border: 2px black dashed;
+   border-left-width: 6px;
+   border-right-width: 6px;
    background-position: 0 0;
     a {
       color: black;
     }
-   &:before {
-     content: '';
-     height: 30px;
-     width: 30px;
-     background: black;
-     border-radius: 100%;
-   }
+     &:before {
+     visibility: visible;
+     -webkit-transform: scaleX(1);
+     transform: scaleX(1);
+    }
   }
+  &:hover
 `
 
 const PageRender = styled.div`

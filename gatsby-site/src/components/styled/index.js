@@ -9,7 +9,7 @@ import styled, { injectGlobal } from 'styled-components';
 injectGlobal`
   @import url('https://fonts.googleapis.com/css?family=Slabo+27px');
   body, html {
-    font-family: 'Slabo 27px', serif !important;
+    font-family: '-apple-system';
     font-size: 11px !important;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
@@ -39,7 +39,7 @@ injectGlobal`
       font-size: 100%;
       font: inherit;
       vertical-align: baseline;
-      font-family: 'Slabo 27px', serif !important;
+      font-family: '-apple-system';
   }
 
 `;
