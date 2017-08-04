@@ -111,32 +111,42 @@ export default class Index extends React.Component {
                 <CubeListItem>stories</CubeListItem>
                 <CubeListItem>emoji use</CubeListItem>
                 <CubeListItem>candles</CubeListItem>
+                <CubeListItem>psychology</CubeListItem>
                 <CubeListItem>fashion</CubeListItem>
                 <CubeListItem>writing</CubeListItem>
                 <CubeListItem>memes</CubeListItem>
                 <CubeListItem>swimming</CubeListItem>
                 <CubeListItem>literature</CubeListItem>
-                <CubeListItem>tinder lol</CubeListItem>
+                <CubeListItem>tindr lol</CubeListItem>
                 <CubeListItem>sesh</CubeListItem>
+                <CubeListItem>schmoozing</CubeListItem>
                 <CubeListItem>culture</CubeListItem>
                 <CubeListItem>wine</CubeListItem>
                 <CubeListItem>graffiti</CubeListItem>
+                <CubeListItem>team work</CubeListItem>
                 <CubeListItem>things</CubeListItem>
                 <CubeListItem>learning</CubeListItem>
                 <CubeListItem>irony</CubeListItem>
                 <CubeListItem>good design</CubeListItem>
+                <CubeListItem>mooching</CubeListItem>
+                <CubeListItem>philosophy</CubeListItem>
                 <CubeListItem>weed i guess</CubeListItem>
                 <CubeListItem>good people</CubeListItem>
                 <CubeListItem>eating out</CubeListItem>
+                <CubeListItem>discussion</CubeListItem>
                 <CubeListItem>exposed brick, plaster..</CubeListItem>
                 <CubeListItem>making jokes</CubeListItem>
                 <CubeListItem>work weirdly</CubeListItem>
                 <CubeListItem>chilling</CubeListItem>
+                <CubeListItem>lighting</CubeListItem>
                 <CubeListItem>pale ales</CubeListItem>
                 <CubeListItem>dancing</CubeListItem>
+                <CubeListItem>yoga</CubeListItem>
                 <CubeListItem>nature</CubeListItem>
                 <CubeListItem>code duh</CubeListItem>
+                <CubeListItem>slack</CubeListItem>
                 <CubeListItem>aspirational dreams of becoming a 🦄</CubeListItem>
+                <CubeListItem>people</CubeListItem>
               </CubeList>
             </Cube>
           </CubeContainer>
