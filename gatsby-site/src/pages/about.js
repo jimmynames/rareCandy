@@ -31,13 +31,19 @@ const VerticalCenterAlign = styled.div`
   align-content: center;
   flex-direction: row;
   padding-bottom: ${props => props.about ? '1.45rem' : null };
+  position: relative;
   a {
     display: flex;
+    align-items: center;
     color: white;
-    color: 860px;
     text-decoration: none;
     font-size: 1.38316rem;
     font-family: '-apple-system';
+    @media (max-width: 414px) {
+      position: absolute;
+      right: 100px;
+      bottom: 30px;
+    }
   }
 
   @media (max-width: 860px) {

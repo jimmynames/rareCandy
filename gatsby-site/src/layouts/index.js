@@ -33,7 +33,8 @@ const Logo = styled.img`
   margin: 0;
   @media (max-width: 693px) {
     padding-top: 0;
-    width: 33.33%;
+    width: 50%;
+    margin: 0 auto;
   }
 `
 
@@ -47,9 +48,15 @@ const Container = styled.section`
     padding: 0.75em;
   }
   @media (max-width: 414px) {
-    height: 20vh;
+    height: 25vh;
   }
 
+`
+
+const PaddingMobile = styled.div`
+@media (max-width: 414px) {
+  padding: 5px;
+}
 `
 
 
@@ -197,14 +204,15 @@ export default class Template extends React.Component {
         />
 
         <Container className="LayoutContainer">
+          <PaddingMobile>
+            <Link to="/"><Logo src={logo} /></Link>
 
-          <Link to="/"><Logo src={logo} /></Link>
-
-          <NavMenu className="Nav Menu">
-            <NavItem><Link to="/about/">About.i</Link></NavItem>
-            <NavItem><Link to="/me/">Me.png</Link></NavItem>
-            <NavItem>Cv.pdf<a href='' download /></NavItem>
-          </NavMenu>
+            <NavMenu className="Nav Menu">
+              <NavItem><Link to="/about/">About.i</Link></NavItem>
+              <NavItem><Link to="/me/">Me.png</Link></NavItem>
+              <NavItem>Cv.pdf<a href='' download /></NavItem>
+            </NavMenu>
+          </PaddingMobile>
         </Container>
 
         <PageRender className='Page Render'>
