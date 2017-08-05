@@ -1,0 +1,56 @@
+{
+  "assetsByChunkName": {
+    "path---events": [
+      "path---events-586c7e095e534a3909ec.js",
+      "path---events-586c7e095e534a3909ec.js.map"
+    ],
+    "page-component---src-pages-index-js": [
+      "page-component---src-pages-index-js-c6fad975fd226c461cc7.js",
+      "page-component---src-pages-index-js-c6fad975fd226c461cc7.js.map"
+    ],
+    "page-component---src-pages-artists-js": [
+      "page-component---src-pages-artists-js-d3162334983a0ebbcb85.js",
+      "page-component---src-pages-artists-js-d3162334983a0ebbcb85.js.map"
+    ],
+    "page-component---src-pages-events-js": [
+      "page-component---src-pages-events-js-1a5539cbcfd0619b6254.js",
+      "page-component---src-pages-events-js-1a5539cbcfd0619b6254.js.map"
+    ],
+    "path---artists": [
+      "path---artists-586c7e095e534a3909ec.js",
+      "path---artists-586c7e095e534a3909ec.js.map"
+    ],
+    "path---index": [
+      "path---index-586c7e095e534a3909ec.js",
+      "path---index-586c7e095e534a3909ec.js.map"
+    ],
+    "commons": [
+      "commons-dcce3a3d99a8e32d9e7a.js",
+      "commons-dcce3a3d99a8e32d9e7a.js.map"
+    ],
+    "page-component---src-pages-studio-js": [
+      "page-component---src-pages-studio-js-1a5539cbcfd0619b6254.js",
+      "page-component---src-pages-studio-js-1a5539cbcfd0619b6254.js.map"
+    ],
+    "path---studio": [
+      "path---studio-586c7e095e534a3909ec.js",
+      "path---studio-586c7e095e534a3909ec.js.map"
+    ],
+    "app": [
+      "app-fb145727d067e4cab5a4.js",
+      "app-fb145727d067e4cab5a4.js.map"
+    ],
+    "page-component---src-pages-about-js": [
+      "page-component---src-pages-about-js-1a5539cbcfd0619b6254.js",
+      "page-component---src-pages-about-js-1a5539cbcfd0619b6254.js.map"
+    ],
+    "layout-component---index": [
+      "layout-component---index-1be241bfdae7595425a6.js",
+      "layout-component---index-1be241bfdae7595425a6.js.map"
+    ],
+    "path---about": [
+      "path---about-586c7e095e534a3909ec.js",
+      "path---about-586c7e095e534a3909ec.js.map"
+    ]
+  }
+}
